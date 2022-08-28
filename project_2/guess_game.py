@@ -18,9 +18,9 @@ def guess_binary(number:int=1) -> int:
     """
     left_limit = MIN_NUMBER
     right_limit = MAX_NUMBER
-    attempt = 0
+    attempts = 0
     while True:
-        attempt += 1
+        attempts += 1
         predicted_number = int((left_limit+right_limit) / 2)
         if predicted_number > number:
             right_limit = predicted_number
@@ -37,7 +37,7 @@ def guess_binary(number:int=1) -> int:
         else:
             break
 
-    return attempt
+    return attempts
 
 
 def average_attempts(guess_func: Callable[[int], int]) -> int:
