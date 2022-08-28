@@ -2,6 +2,7 @@
 
 ## Content
 [1. Project description](https://github.com/astaticmass/sf_ds/blob/main/project_1/README.md#Project-description)
+
 [2. What is the case?](https://github.com/astaticmass/sf_ds/blob/main/project_1/README.md#Project-description#What-is-the-case)
 
 ### Project description
