@@ -19,23 +19,14 @@ def guess_binary(number:int=1) -> int:
     left_limit = MIN_NUMBER
     right_limit = MAX_NUMBER
     attempts = 0
-    while True:
+    predicted_number = 0
+    while predicted_number != number:
         attempts += 1
         predicted_number = int((left_limit+right_limit) / 2)
         if predicted_number > number:
-            right_limit = predicted_number
-            # When is difference between limits equal to 1
-            # limit need to be corrected
-            if right_limit-left_limit == 1:
-                right_limit -= 1
-        elif predicted_number < number:
-            left_limit = predicted_number
-            # When is difference between limits equal to 1
-            # limit need to be corrected
-            if right_limit-left_limit == 1:
-                right_limit += 1
+            right_limit = predicted_number - 1
         else:
-            break
+            left_limit = predicted_number + 1
 
     return attempts
 
