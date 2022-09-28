@@ -16,8 +16,8 @@ Case is to develop script to guess random number in lesser number of attempts.
 - Computer generates integer number from 1 to 100 and we need to guess that number. Guess process will be done by binary search;
 - Algorithm makes its decisions based on information about lesser or greater guessed number to random number.
 
-**Qualty metric**     
-Result is rated by average number of attempts at 1000 repetitions
+**Quality metric**     
+Result is rated by average number of attempts at 1000 repetitions.
 
 **What do we practice?**     
 We study to write good Python code.
